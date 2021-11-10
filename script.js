@@ -4,9 +4,9 @@ const hourHand = document.querySelector('.hour-hand')
 const minutesHand = document.querySelector('.min-hand')
 
 function setBackground(){
-    fetch("https://source.unsplash.com/random/1240x1240").then((res)=>{
+    fetch("https://source.unsplash.com/random/1980x1240").then((res)=>{
         let currentBackground = res.url;
-        document.querySelector('html').style.background =`url(${currentBackground})`
+        document.querySelector('html').style.background =`url(${currentBackground}) no-repeat`
     })
 }
 
